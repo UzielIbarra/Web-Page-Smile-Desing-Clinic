@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 // Configuración de la fuente principal
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${inter.className} font-system-pro bg-[#0a0a0a] antialiased text-sdc-body`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
